@@ -1,0 +1,22 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \"Error: no test specified\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanOlmedo/README_generator.git"
+  },
+  "keywords": [
+    "README"
+  ],
+  "author": "DanOlmedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanOlmedo/README_generator/issues"
+  },
+  "homepage": "https://github.com/DanOlmedo/README_generator#readme"
+}
