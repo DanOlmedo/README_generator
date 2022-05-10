@@ -21,6 +21,7 @@
   "homepage": "https://github.com/DanOlmedo/README_generator#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "util": "^0.12.4"
   }
 }

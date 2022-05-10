@@ -1,12 +1,14 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require("util");
+
+//const generatorMarkdown = require('./util/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 // const questions = [`package name: `,`version: `,`description: `,`entry point: `,`test command: `,`git repository: `,`keywords: `,`author: `,`license: `];
 
-inquirer
-  .prompt([
+const questions = [
     {
       type: 'input',
       message: 'package name: ',
@@ -51,21 +53,30 @@ inquirer
         type: 'input',
         message: 'license: ',
         name: 'lic',
-      },
-]).then((data) => {
-const filename = `${data.pname.toLowerCase().split(' ').join('')}.json`;
-fs.writeFile(filename, `package name: ${data.pname}\nversion: ${data.ver}\ndescription: ${data.desc}\nentry point: ${data.ep}\ntest command: ${data.tcomm}\ngit repository: ${data.grepo}\nkeywords: ${data.kwrds}\nauthor: ${data.auth}\nlicense: ${data.lic}`.json);
-});
+      }];
+
 
 // TODO: Create a function to write README file
-function writeToFile(data) {
-    fs.writeFile('README.md', data, (err) =>
-   err ? console.error(err) : console.log('Success!') );
+function writeToFile(fileName,data) {
+    fs.writeFile(fileName,data,function(err){
+      //console.log(filename)
+      console.log(data)
+      if (err) {
+        return console.log(err)
+      }
+      else {
+        console.log("Succes")
+      }
+    })
 }
 
 // TODO: Create a function to initialize app
 function init() {
-   
+   inquirer.prompt(questions)
+   .then(function(data){
+     writeToFile("test.md",JSON.stringify(data));
+     console.log(data);
+   });
 }
 
 // Function call to initialize app
