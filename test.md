@@ -1,1 +1,0 @@
-{"pname":"a","ver":"a","desc":"a","ep":"a","tcomm":"a","grepo":"a","kwrds":"a","auth":"a","lic":"a"}

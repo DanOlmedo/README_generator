@@ -1,6 +1,6 @@
-# a
+# README generator
 
-          https://github.com/a/a
+          https://github.com/DanOlmedo/README generator
           #Table of contents
           *Installation
           *Usage
@@ -11,21 +11,21 @@
 
           #
           The follwing dependencies are necessary to run the application:
-          a
+          FS,iquirer
 
           General utility of application:
-          a
+          A node application to automatically create a high grade REAMD.md file
 
           License:
-          a
+          MIT
 
           Contributors:
-          a
+          DanOlmedo
 
           Test commands to demonstrate app functionality:
-          a
+          init()
 
           FAQs:
-          aa
+          What is this used for? To create an easy and fast README with input at the command line
 
-          If you have any questions, contact: a.
+          If you have any questions, contact: DanOlmedo.
