@@ -1,9 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require("util");
+const util = require('util');
 
-//const generatorMarkdown = require('./util/generateMarkdown');
+const generatorMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 // const questions = [`package name: `,`version: `,`description: `,`entry point: `,`test command: `,`git repository: `,`keywords: `,`author: `,`license: `];
@@ -26,23 +26,23 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'entry point: ',
-        name: 'ep',
+        message: 'dependencies: ',
+        name: 'dep',
       },
       {
         type: 'input',
-        message: 'test command: ',
-        name: 'tcomm',
+        message: 'contributors: ',
+        name: 'cont',
       },
       {
         type: 'input',
-        message: 'git repository: ',
-        name: 'grepo',
+        message: 'FAQs: ',
+        name: 'faq',
       },
       {
         type: 'input',
-        message: 'keywords: ',
-        name: 'kwrds',
+        message: 'test commands: ',
+        name: 'tcom',
       },
       {
         type: 'input',
@@ -74,7 +74,7 @@ function writeToFile(fileName,data) {
 function init() {
    inquirer.prompt(questions)
    .then(function(data){
-     writeToFile("test.md",JSON.stringify(data));
+     writeToFile("README.md",generatorMarkdown(data));
      console.log(data);
    });
 }
