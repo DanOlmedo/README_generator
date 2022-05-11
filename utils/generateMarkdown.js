@@ -14,14 +14,21 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.pname}
 
-          https://github.com/${data.auth}/${data.pname}
+          To be able to create a good and descriptive README file is vital for 
+          any web application. This application takes in user input via the command
+          line and automatically creates a structured and understandable README.
+
+          This file is an example of a README file created with the application.
+
+          GitHub repository: https://github.com/${data.auth}/${data.pname}
+
           #Table of contents
-          *Installation
-          *Usage
-          *License
-          *Contributors
-          *Tests
-          *FAQ
+            *Installation
+            *Usage
+            *License
+            *Contributors
+            *Tests
+            *FAQ
 
           #
           The follwing dependencies are necessary to run the application:

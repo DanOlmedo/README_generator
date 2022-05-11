@@ -1,20 +1,27 @@
 # README generator
 
-          https://github.com/DanOlmedo/README generator
+          To be able to create a good and descriptive README file is vital for 
+          any web application. This application takes in user input via the command
+          line and automatically creates a structured and understandable README.
+
+          This file is an example of a README file created with the application.
+
+          GitHub repository: https://github.com/DanOlmedo/README generator
+
           #Table of contents
-          *Installation
-          *Usage
-          *License
-          *Contributors
-          *Tests
-          *FAQ
+            *Installation
+            *Usage
+            *License
+            *Contributors
+            *Tests
+            *FAQ
 
           #
           The follwing dependencies are necessary to run the application:
-          FS,iquirer
+          fs, inquirer
 
           General utility of application:
-          A node application to automatically create a high grade REAMD.md file
+          An application that takes is user input via the command line, and creates a README file with the data
 
           License:
           MIT
@@ -23,9 +30,9 @@
           DanOlmedo
 
           Test commands to demonstrate app functionality:
-          init()
+          writeToFile()
 
           FAQs:
-          What is this used for? To create an easy and fast README with input at the command line
+          How do ir run the app? --run: node index.js at the command line
 
           If you have any questions, contact: DanOlmedo.
